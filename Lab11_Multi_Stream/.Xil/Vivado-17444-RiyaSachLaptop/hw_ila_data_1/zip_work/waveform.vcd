@@ -1,0 +1,59 @@
+$date
+        2023-Nov-21 10:11:33
+$end
+$version
+        Vivado v2019.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 64 " design_1_i/system_ila_0/inst/net_slot_0_axis_tdata [63:0] $end
+$var reg 1 b design_1_i/system_ila_0/inst/net_slot_0_axis_tvalid $end
+$var reg 1 c design_1_i/system_ila_0/inst/net_slot_0_axis_tready $end
+$var reg 1 d design_1_i/system_ila_0/inst/net_slot_0_axis_tlast $end
+$var reg 32 e design_1_i/system_ila_0/inst/net_slot_1_axis_tdata [31:0] $end
+$var reg 1 '" design_1_i/system_ila_0/inst/net_slot_1_axis_tvalid $end
+$var reg 1 (" design_1_i/system_ila_0/inst/net_slot_1_axis_tready $end
+$var reg 1 )" design_1_i/system_ila_0/inst/net_slot_1_axis_tlast $end
+$var reg 32 *" design_1_i/system_ila_0/inst/net_slot_2_axis_tdata [31:0] $end
+$var reg 1 J" design_1_i/system_ila_0/inst/net_slot_2_axis_tvalid $end
+$var reg 1 K" design_1_i/system_ila_0/inst/net_slot_2_axis_tready $end
+$var reg 1 L" design_1_i/system_ila_0/inst/net_slot_2_axis_tlast $end
+$var reg 3 M" Interface__i1_s0___xfft_0_M_AXIS_DATA_ [2:0] $end
+$var reg 3 P" Interface__i1_s1___axis_dwidth_converter_0_M_AXIS_ [2:0] $end
+$var reg 3 S" Interface__i1_s2___floating_point_0_M_AXIS_RESULT_ [2:0] $end
+$var reg 3 V" T_Channel__i1_s0___xfft_0_M_AXIS_DATA_ [2:0] $end
+$var reg 3 Y" T_Channel__i1_s1___axis_dwidth_converter_0_M_AXIS_ [2:0] $end
+$var reg 3 \" T_Channel__i1_s2___floating_point_0_M_AXIS_RESULT_ [2:0] $end
+$var reg 1 _" _TRIGGER $end
+$var reg 1 `" _WINDOW $end
+$var reg 1 a" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0b
+1c
+0d
+b0 e
+0'"
+1("
+0)"
+b1111111100000000000000000000000 *"
+0J"
+1K"
+0L"
+b11 M"
+b11 P"
+b11 S"
+b11 V"
+b11 Y"
+b11 \"
+0_"
+1`"
+0a"
+$end
+#1024
+1_"

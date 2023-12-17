@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 29 10:39:40 2023
+# Process ID: 28368
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28780 C:\Users\Riya_Sachdeva\Desktop\ELD_Lab\Lab11_Multi_Stream\Lab11_Multi_Stream.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.xpr
+update_compile_order -fileset sources_1
+save_project_as recp_before_fft C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/recp_before_fft -exclude_run_results -force
+open_bd_design {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/recp_before_fft/recp_before_fft.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout -routing
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_RESET0_N]
+delete_bd_objs [get_bd_nets rst_ps7_0_50M_peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets axis_dwidth_converter_0_M_AXIS]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_M_AXI_GP0]
+delete_bd_objs [get_bd_intf_nets floating_point_0_M_AXIS_RESULT]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI]
+delete_bd_objs [get_bd_intf_nets xfft_0_M_AXIS_DATA]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_S2MM]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_MM2S]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_ACP]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins ps7_0_axi_periph/ACLK]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_ACP} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins floating_point_0/S_AXIS_A]
+connect_bd_intf_net [get_bd_intf_pins floating_point_0/M_AXIS_RESULT] [get_bd_intf_pins axis_dwidth_converter_0/S_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_dwidth_converter_0/M_AXIS] [get_bd_intf_pins xfft_0/S_AXIS_DATA]
+connect_bd_intf_net [get_bd_intf_pins xfft_0/M_AXIS_DATA] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.S_TDATA_NUM_BYTES {4} CONFIG.M_TDATA_NUM_BYTES {8} CONFIG.HAS_MI_TKEEP {1}] [get_bd_cells axis_dwidth_converter_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (50 MHz)" }  [get_bd_pins axis_dwidth_converter_0/aclk]
+endgroup
+delete_bd_objs [get_bd_cells system_ila_0]
+regenerate_bd_layout
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {floating_point_0_M_AXIS_RESULT}]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets floating_point_0_M_AXIS_RESULT] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_dwidth_converter_0_M_AXIS}]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_dwidth_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {xfft_0_M_AXIS_DATA}]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets xfft_0_M_AXIS_DATA] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+connect_bd_net [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.c_m_axis_mm2s_tdata_width {64} CONFIG.c_include_s2mm {1} CONFIG.c_include_s2mm_dre {0} CONFIG.c_s2mm_burst_size {64}] [get_bd_cells axi_dma_0]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.c_include_s2mm {1} CONFIG.c_include_s2mm_dre {1} CONFIG.c_s2mm_burst_size {64}] [get_bd_cells axi_dma_0]
+endgroup
+save_bd_design

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 10 09:21:10 2023
+# Process ID: 12144
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_AXI_Stream/Lab6_AXI_Stream.runs/FP_recp_synth_1
+# Command line: vivado.exe -log FP_recp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FP_recp.tcl
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_AXI_Stream/Lab6_AXI_Stream.runs/FP_recp_synth_1/FP_recp.vds
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_AXI_Stream/Lab6_AXI_Stream.runs/FP_recp_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FP_recp.tcl -notrace

@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sim_1/new/sim_arith.v,1697269059,verilog,,,,sim_arith,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sources_1/ip/FP_add1/sim/FP_add1.vhd,1697084567,vhdl,,,,fp_add1,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sources_1/ip/FP_add2/sim/FP_add2.vhd,1697084604,vhdl,,,,fp_add2,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sources_1/ip/FP_ln/sim/FP_ln.vhd,1697084655,vhdl,,,,fp_ln,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sources_1/ip/FP_recp/sim/FP_recp.vhd,1697084530,vhdl,,,,fp_recp,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sources_1/ip/FP_sqrt/sim/FP_sqrt.vhd,1697084443,vhdl,,,,fp_sqrt,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sources_1/new/top_arith.v,1697270146,verilog,,C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab6_hw/Lab6_hw.srcs/sim_1/new/sim_arith.v,,top_arith,,,,,,,,

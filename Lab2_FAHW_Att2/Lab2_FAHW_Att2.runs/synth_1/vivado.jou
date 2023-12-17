@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep  5 11:15:22 2023
+# Process ID: 4228
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/synth_1
+# Command line: vivado.exe -log subtractorHW.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source subtractorHW.tcl
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/synth_1/subtractorHW.vds
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source subtractorHW.tcl -notrace

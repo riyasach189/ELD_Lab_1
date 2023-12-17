@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 21 16:14:13 2023
+# Process ID: 12172
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab1_FA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19856 C:\Users\Riya_Sachdeva\Desktop\ELD_Lab\Lab1_FA\Lab1_FA.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab1_FA/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab1_FA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab1_FA/Lab1_FA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab1_FA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 821.777 ; gain = 185.461
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 16:18:56 2023...

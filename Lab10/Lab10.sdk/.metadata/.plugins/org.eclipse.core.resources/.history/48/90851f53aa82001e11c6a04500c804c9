@@ -1,0 +1,149 @@
+/******************************************************************************
+*
+* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <complex.h>
+#include <xtime_l.h>
+
+#define N 8
+const int rev8[N] = {0, 4, 2, 6, 1, 5, 3, 7};
+const float complex W[N/2] = {1+0*I, 0.707-0.707*I, 0-1*I, -0.707-0.707*I};
+
+void bitreverse(float complex dataIn[N], float complex dataOut[N])
+{
+	for(int i = 0; i < N; i++)
+	{
+		dataOut[i] = dataIn[rev8[i]];
+	}
+}
+
+void FFT_stages(float complex FFT_input[N], float complex FFT_output[N])
+{
+	float complex temp1[N], temp2[N];
+
+	//stage 1
+	for (int i = 0; i < N; i=i+2)
+	{
+		temp1[i] = FFT_input[i] + W[0]*FFT_input[i+1];
+		temp1[i+1] = FFT_input[i] - W[0]*FFT_input[i+1];
+	}
+
+	//stage 2
+	for (int i = 0; i < N; i=i+4)
+	{
+		temp2[i] = temp1[i] + W[0]*temp1[i+2];
+		temp2[i+1] = temp1[i+1] + W[2]*temp1[i+3];
+		temp2[i+2] = temp1[i] - W[0]*temp1[i+2];
+		temp2[i+3] = temp1[i+1] - W[2]*temp1[i+3];
+	}
+
+	//stage 3
+	FFT_output[0] = temp2[0]+W[0]*temp2[4];
+	FFT_output[1] = temp2[1]+W[1]*temp2[5];
+	FFT_output[2] = temp2[2]+W[2]*temp2[6];
+	FFT_output[3] = temp2[3]+W[3]*temp2[7];
+	FFT_output[4] = temp2[0]-W[0]*temp2[4];
+	FFT_output[5] = temp2[1]-W[1]*temp2[5];
+	FFT_output[6] = temp2[2]-W[2]*temp2[6];
+	FFT_output[7] = temp2[3]-W[3]*temp2[7];
+}
+
+
+int main()
+{
+    init_platform();
+
+    printf("8 point FFT\n\r");
+
+    float complex FFT_input[N];
+
+    for (int i = 0; i < N; i++)
+        {
+    		float real, img;
+        	printf("Enter %d real value: ", i);
+        	scanf("%f", &real);
+        	printf("Enter %d imaginary value: ", i);
+        	scanf("%f", &img);
+
+        	FFT_input[i] = real+img*I;
+        }
+
+    float complex FFT_output[N];
+
+    float complex FFT_rev[N];
+
+    XTime PS_start_time, PS_end_time;
+    XTime_SetTime(0);
+    XTime_GetTime(&PS_start_time);
+
+    bitreverse(FFT_input, FFT_rev);
+    FFT_stages(FFT_rev, FFT_output);
+
+    XTime_GetTime(&PS_end_time);
+
+    printf("\n FFT Input \r\n");
+    for (int i = 0; i < N; i++)
+    {
+    	printf("%f + i%f\n", creal(FFT_input[i]), cimagf(FFT_input[i]));
+    }
+
+    printf("\n FFT Output \r\n");
+        for (int i = 0; i < N; i++)
+        {
+        	printf("%f + i%f\n", creal(FFT_output[i]), cimagf(FFT_output[i]));
+        }
+
+    float time = 0;
+    time = (float) 1.0*(PS_end_time-PS_start_time)/(COUNTS_PER_SECOND/1000000);
+    printf("\n\rExecution time for PS in microseconds: %f", time);
+
+    cleanup_platform();
+    return 0;
+}

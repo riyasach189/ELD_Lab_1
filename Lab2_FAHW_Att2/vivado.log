@@ -1,0 +1,158 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Sep  2 09:50:08 2023
+# Process ID: 14580
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1260 C:\Users\Riya_Sachdeva\Desktop\Labs\Lab2_FAHW_Att2\Lab2_FAHW_Att2.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW_Att2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 855.043 ; gain = 221.395
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Sep  2 09:50:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 865.469 ; gain = 0.000
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 1795.543 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1795.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1795.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:49 . Memory (MB): peak = 1936.062 ; gain = 1070.594
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/Riya_Sachdeva/Desktop/Labs/Lab1_FA/Lab1_FA.srcs/sim_1/new/subtractor_tb.v
+import_files -fileset sim_1 -norecurse C:/Users/Riya_Sachdeva/Desktop/Labs/Lab1_FA/Lab1_FA.srcs/sim_1/new/subtractor_tb.v
+update_compile_order -fileset sim_1
+set_property top subtractor_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'subtractor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj subtractor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.srcs/sources_1/imports/new/full_adder_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.srcs/sources_1/imports/new/subtractor_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtractor_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.srcs/sim_1/imports/new/subtractor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtractor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim'
+"xelab -wto d947a07e4b014c6b90706a17463d40c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot subtractor_tb_behav xil_defaultlib.subtractor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d947a07e4b014c6b90706a17463d40c1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot subtractor_tb_behav xil_defaultlib.subtractor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.subtractor_4bit
+Compiling module xil_defaultlib.subtractor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot subtractor_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim/xsim.dir/subtractor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep  2 09:58:28 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1987.613 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "subtractor_tb_behav -key {Behavioral:sim_1:Functional:subtractor_tb} -tclbatch {subtractor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source subtractor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 75 ns : File "C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.srcs/sim_1/imports/new/subtractor_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'subtractor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 1998.707 ; gain = 25.309
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.226.142:58545
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:192.168.226.142:58545".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2251.879 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.226.142:58545
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:192.168.226.142:58545".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 2251.879 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.226.142:58545
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:192.168.226.142:58545".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2251.879 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+close_hw
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.226.142:54829
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:192.168.226.142:54829".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2251.879 ; gain = 0.000
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2251.879 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  2 10:44:15 2023...

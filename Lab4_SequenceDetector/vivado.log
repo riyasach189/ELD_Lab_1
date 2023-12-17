@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 12 10:28:43 2023
+# Process ID: 11276
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2492 C:\Users\Riya_Sachdeva\Desktop\ELD_Lab\Lab4_SequenceDetector\Lab4_SequenceDetector.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 853.652 ; gain = 200.684
+update_compile_order -fileset sources_1
+close [ open C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.srcs/sources_1/new/FSM_moore_1111.v w ]
+add_files C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.srcs/sources_1/new/FSM_moore_1111.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Sep 12 10:33:20 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.runs/synth_1/runme.log
+[Tue Sep 12 10:33:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.226.142:60496
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1071.312 ; gain = 0.000
+connect_hw_server -url 192.168.226.142:60496
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:192.168.226.142:60496
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2096.000 ; gain = 5.055
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210351A78181A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210351A78181A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target 192.168.226.142:60496/xilinx_tcf/Digilent/210351A78181A
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2117.012 ; gain = 21.012
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.runs/impl_1/Vio_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.runs/impl_1/Vio_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab4_SequenceDetector/Lab4_SequenceDetector.runs/impl_1/Vio_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2127.574 ; gain = 0.000
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes Inp_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {Inp_1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"v1"}]]
+endgroup
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 12 10:48:14 2023...

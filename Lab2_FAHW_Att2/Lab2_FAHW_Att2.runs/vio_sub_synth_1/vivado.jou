@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep  5 11:15:12 2023
+# Process ID: 8236
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/vio_sub_synth_1
+# Command line: vivado.exe -log vio_sub.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vio_sub.tcl
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/vio_sub_synth_1/vio_sub.vds
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab2_FAHW_Att2/Lab2_FAHW_Att2.runs/vio_sub_synth_1\vivado.jou
+#-----------------------------------------------------------
+source vio_sub.tcl -notrace

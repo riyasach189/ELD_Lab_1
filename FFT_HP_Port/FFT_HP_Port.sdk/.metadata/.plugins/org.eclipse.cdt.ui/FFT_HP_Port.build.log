@@ -1,0 +1,8 @@
+15:50:58 **** Incremental Build of configuration Debug for project FFT_HP_Port ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+15:50:59 Build Finished (took 364ms)
+

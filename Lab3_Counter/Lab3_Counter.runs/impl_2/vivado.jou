@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 12 14:25:21 2023
+# Process ID: 2232
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab3_Counter/Lab3_Counter.runs/impl_2
+# Command line: vivado.exe -log Vio_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Vio_wrapper.tcl -notrace
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab3_Counter/Lab3_Counter.runs/impl_2/Vio_wrapper.vdi
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab3_Counter/Lab3_Counter.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source Vio_wrapper.tcl -notrace

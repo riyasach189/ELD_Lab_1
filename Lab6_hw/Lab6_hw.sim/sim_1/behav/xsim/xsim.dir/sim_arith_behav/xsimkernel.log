@@ -1,0 +1,7 @@
+Running: xsim.dir/sim_arith_behav/xsimk.exe -simmode gui -wdb sim_arith_behav.wdb -simrunnum 0 -socket 61555
+Design successfully loaded
+Design Loading Memory Usage: 14020 KB (Peak: 14020 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 18344 KB (Peak: 18344 KB)
+Simulation CPU Usage: 1905 ms

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Lab2_FAHW.srcs/sources_1/ip/vio_FA_1/hdl" --include "../../../../Lab2_FAHW.srcs/sources_1/ip/vio_subtractor/hdl" \
+"../../../../Lab2_FAHW.srcs/sources_1/imports/new/full_adder_1bit.v" \
+"../../../../Lab2_FAHW.srcs/sources_1/imports/new/subtractor_4bit.v" \
+"../../../../Lab2_FAHW.srcs/sim_1/imports/new/subtractor_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

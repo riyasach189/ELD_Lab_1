@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Sep  2 09:50:08 2023
+# Process ID: 14580
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1260 C:\Users\Riya_Sachdeva\Desktop\Labs\Lab2_FAHW_Att2\Lab2_FAHW_Att2.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/Labs/Lab2_FAHW_Att2/Lab2_FAHW_Att2.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes C:/Users/Riya_Sachdeva/Desktop/Labs/Lab1_FA/Lab1_FA.srcs/sim_1/new/subtractor_tb.v
+import_files -fileset sim_1 -norecurse C:/Users/Riya_Sachdeva/Desktop/Labs/Lab1_FA/Lab1_FA.srcs/sim_1/new/subtractor_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top subtractor_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source subtractor_tb.tcl
+open_hw
+close_hw
+open_hw
+close_sim

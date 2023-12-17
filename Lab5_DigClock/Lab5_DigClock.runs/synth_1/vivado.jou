@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 19 09:17:42 2023
+# Process ID: 15492
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab5_DigClock/Lab5_DigClock.runs/synth_1
+# Command line: vivado.exe -log VIO_Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VIO_Wrapper.tcl
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab5_DigClock/Lab5_DigClock.runs/synth_1/VIO_Wrapper.vds
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab5_DigClock/Lab5_DigClock.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VIO_Wrapper.tcl -notrace

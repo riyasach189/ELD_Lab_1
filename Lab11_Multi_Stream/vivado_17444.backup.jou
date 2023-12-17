@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 21 10:04:27 2023
+# Process ID: 17444
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6588 C:\Users\Riya_Sachdeva\Desktop\ELD_Lab\Lab11_Multi_Stream\Lab11_Multi_Stream.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server -url 192.168.226.142:58183
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210351A78181A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210351A78181A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+save_wave_config {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Thu Nov  9 20:25:03 2023
+# Process ID: 15900
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

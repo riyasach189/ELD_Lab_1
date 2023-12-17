@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW/Lab2_FAHW.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW/Lab2_FAHW.srcs/sim_1/imports/new/subtractor_tb.v,1692880161,verilog,,,,subtractor_tb,,,../../../../Lab2_FAHW.srcs/sources_1/ip/vio_FA_1/hdl;../../../../Lab2_FAHW.srcs/sources_1/ip/vio_subtractor/hdl,,,,,
+C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW/Lab2_FAHW.srcs/sources_1/imports/new/full_adder_1bit.v,1692676232,verilog,,C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW/Lab2_FAHW.srcs/sources_1/imports/new/subtractor_4bit.v,,full_adder_1bit,,,../../../../Lab2_FAHW.srcs/sources_1/ip/vio_FA_1/hdl;../../../../Lab2_FAHW.srcs/sources_1/ip/vio_subtractor/hdl,,,,,
+C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW/Lab2_FAHW.srcs/sources_1/imports/new/subtractor_4bit.v,1692879424,verilog,,C:/Users/Riya_Sachdeva/Desktop/College/Semester_3/Embedded_Logic_Design/Labs/Lab2_FAHW/Lab2_FAHW.srcs/sim_1/imports/new/subtractor_tb.v,,subtractor_4bit,,,../../../../Lab2_FAHW.srcs/sources_1/ip/vio_FA_1/hdl;../../../../Lab2_FAHW.srcs/sources_1/ip/vio_subtractor/hdl,,,,,

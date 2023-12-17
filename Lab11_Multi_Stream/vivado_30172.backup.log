@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 29 10:36:17 2023
+# Process ID: 30172
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16360 C:\Users\Riya_Sachdeva\Desktop\ELD_Lab\Lab11_Multi_Stream\Lab11_Multi_Stream.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab11_Multi_Stream/Lab11_Multi_Stream.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 929.082 ; gain = 311.262
+update_compile_order -fileset sources_1
+save_project_as recp_before_fft C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/recp_before_fft -force
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'save_project_as' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 10:39:25 2023...

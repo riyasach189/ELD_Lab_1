@@ -1,0 +1,2 @@
+vio_mult.v,verilog,xil_defaultlib,../../../../multiplier.srcs/sources_1/ip/vio_mult/sim/vio_mult.v,incdir="../../../../multiplier.srcs/sources_1/ip/vio_mult/hdl/verilog"incdir="../../../../multiplier.srcs/sources_1/ip/vio_mult/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

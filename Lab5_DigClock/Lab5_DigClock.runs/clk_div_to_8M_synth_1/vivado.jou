@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 19 09:06:40 2023
+# Process ID: 836
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab5_DigClock/Lab5_DigClock.runs/clk_div_to_8M_synth_1
+# Command line: vivado.exe -log clk_div_to_8M.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_div_to_8M.tcl
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab5_DigClock/Lab5_DigClock.runs/clk_div_to_8M_synth_1/clk_div_to_8M.vds
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab5_DigClock/Lab5_DigClock.runs/clk_div_to_8M_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_div_to_8M.tcl -notrace

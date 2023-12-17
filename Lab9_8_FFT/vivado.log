@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov 11 15:52:32 2023
+# Process ID: 10076
+# Current directory: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6332 C:\Users\Riya_Sachdeva\Desktop\ELD_Lab\Lab9_8_FFT\Lab9_8_FFT.xpr
+# Log file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/vivado.log
+# Journal file: C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 826.418 ; gain = 192.105
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk -hwspec C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk -hwspec C:/Users/Riya_Sachdeva/Desktop/ELD_Lab/Lab9_8_FFT/Lab9_8_FFT.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 11 16:21:00 2023...

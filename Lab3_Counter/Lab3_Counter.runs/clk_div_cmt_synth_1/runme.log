@@ -1,0 +1,13 @@
+
+*** Running vivado
+    with args -log clk_div_cmt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_div_cmt.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source clk_div_cmt.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_div_cmt, cache-ID = 68a3d7431bfed503.
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 12 14:24:43 2023...

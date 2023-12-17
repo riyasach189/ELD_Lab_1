@@ -1,0 +1,1 @@
+FP_ln.vhd,vhdl,xil_defaultlib,../../../../Lab7_hw2.srcs/sources_1/ip/FP_ln/sim/FP_ln.vhd,
